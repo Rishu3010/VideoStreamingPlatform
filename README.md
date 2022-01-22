@@ -22,7 +22,7 @@ This repo is a **Full-Stack Application** which provides a modern-esque platform
 This is a *group project* made as the group project for the fulfillment of the degree - **Masters of Computer Applications** *(MCA)*.
 Institute: *CDAC, Noida*  Affiliated with *GGSIPU*.
 
-#Contributors:-
+# Contributors:-
 ### - Rishabh Rathore
 ### - Pankaj
 ### - Ashish Sundariyal
