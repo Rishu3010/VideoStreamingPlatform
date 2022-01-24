@@ -1,8 +1,8 @@
 import "./app.scss";
-import Home from "./home/home";
+import Home from "./home/Home";
 
-const app = () => {
+const App = () => {
   return <Home />;
 };
 
-export default app;
+export default App;

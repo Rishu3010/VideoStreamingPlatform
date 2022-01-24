@@ -1,0 +1,48 @@
+import "./navbar.scss";
+import { useState } from "react";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  window.onscroll = () => {
+    setIsScrolled(window.scrollY === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
+  return (
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
+      <div className="container">
+        <div className="left">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+          />
+          <span>Homepage</span>
+          <span>Series</span>
+          <span>Movies</span>
+          <span>Trending</span>
+          <span>Mylist</span>
+        </div>
+
+        <div className="right">
+          <SearchIcon className="icon" />
+          <span>KIDS</span>
+          <NotificationsIcon className="icon" />
+          <img
+            src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress"
+            alt="User Account"
+          />
+          <div className="profile">
+            <ArrowDropDownIcon className="icon" />
+            <div className="options">
+              <span>Settings</span>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
