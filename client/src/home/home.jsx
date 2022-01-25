@@ -1,15 +1,12 @@
 import "./home.scss";
 import Navbar from "../components/navbar/Navbar";
+import Featured from "../components/featured/Featured";
 
 const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <img
-        width="100%"
-        src="https://images.pexels.com/photos/9899966/pexels-photo-9899966.jpeg"
-        alt=""
-      />
+      <Featured type="movie" />
     </div>
   );
 };
